@@ -11,4 +11,4 @@ The application will then carry out k-means clustering for the given data.
 
 **Running the application**
 -  Please run the scheduler.java. The application will collect data in the defined intervals. The default read interval is 24 hours but can be configured from ini file.
--  Conversely you can also run the "ClusterForSummary.jar" file inside the https://gitlab.tu-berlin.de/mandir123/DataScienceApplication_pj/tree/master/Application/out/artifacts/ClusterForSummary_jar directory
+-  Conversely you can also run the "ClusterForSummary.jar" file inside the TextClusteringForNewsSummary/Application/out/artifacts/ClusterForSummary_jar/ directory
