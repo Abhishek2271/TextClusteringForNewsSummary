@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Class-Path: rome-utils-1.7.1.jar native_system-java-1.1.jar mssql-jdbc
+ -7.0.0.jre8.jar opennlp-tools-1.9.1.jar native_ref-java-1.1.jar commo
+ ns-math3-3.6.1-tools.jar commons-math3-3.6.1.jar jdom2-2.0.6.jar netl
+ ib-java-1.1.jar weka-stable-3.8.3.jar arpack_combined_all-0.1.jar ope
+ ncsv-4.4.jar slf4j-api-1.7.16.jar ini4j-0.5.4.jar rome-1.7.1.jar core
+ -1.1.jar elki-bundle-0.7.1.jar bounce-0.18.jar java-cup-11b-2015.03.2
+ 6.jar twitter4j-core-4.0.7.jar java-cup-11b-runtime-2015.03.26.jar co
+ m.sun.syndication.jar snowball_stemmer.jar mtj-1.0.4.jar
+Main-Class: Scheduler
+

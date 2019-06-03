@@ -1,0 +1,11 @@
+1) added - Home 11, homepage slider full screen version.
+2) added - Home 12, homepage slider with video version.
+3) added - Home Onepage 3, homepage onepage version with full screen slider.
+4) bugfix - google map small buttons problem.
+find '.pi-google-map img' line in global.css
+And add "!important" to max-width as in example below.
+
+.pi-google-map img {
+  max-width: none !important;
+}
+

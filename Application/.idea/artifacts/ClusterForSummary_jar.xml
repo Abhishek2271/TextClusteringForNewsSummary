@@ -1,0 +1,36 @@
+<component name="ArtifactManager">
+  <artifact name="ClusterForSummary:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ClusterForSummary_jar</output-path>
+    <root id="root">
+      <element id="archive" name="ClusterForSummary.jar">
+        <element id="module-output" name="ClusterForSummary" />
+        <element id="dir-copy" path="$PROJECT_DIR$" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/rome-utils-1.7.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/native_system-java-1.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/mssql-jdbc-7.0.0.jre8.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/opennlp-tools-1.9.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/native_ref-java-1.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/commons-math3-3.6.1-tools.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/commons-math3-3.6.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/jdom2-2.0.6.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/netlib-java-1.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/weka-stable-3.8.3.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/arpack_combined_all-0.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/opencsv-4.4.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/slf4j-api-1.7.16.jar" />
+      <element id="library" level="project" name="ini4j-0.5.4" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/rome-1.7.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/core-1.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/elki-bundle-0.7.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/bounce-0.18.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/java-cup-11b-2015.03.26.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/twitter4j-core-4.0.7.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/java-cup-11b-runtime-2015.03.26.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/com.sun.syndication.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/snowball_stemmer.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Ref/mtj-1.0.4.jar" />
+      <element id="dir-copy" path="$PROJECT_DIR$" />
+    </root>
+  </artifact>
+</component>

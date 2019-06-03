@@ -1,0 +1,75 @@
+scripts/pi.init.isotope.js
+insert line 13:
+	defaultFilter = $el.data('isotopeDefaultFilter') || 0,
+
+insert line 20:
+	filter: defaultFilter,
+
+
+scripts/pi.init.tab.js
+remove line 5:
+        $('.pi-tabs-navigation a').click(function (e) {
+
+Insert lines 5-8:
+
+        var $nav = $('.pi-tabs-navigation a');
+
+        $nav.click(function (e) {
+
+insert lines 22-49:
+
+        $('a.pi-tab-link').click(function(){
+            if($.fn.scrollTo){
+                var hash = $(this).get(0).hash,
+                    $el = $(hash);
+                if($el.length){
+                    $el = $el.eq(0);
+                    $.scrollTo($el.parent());
+                }
+            }
+        });
+
+        if($nav.length){
+            $(window).on('hashchange', function(){
+                checkActivatedTab();
+            });
+
+            checkActivatedTab();
+        }
+
+        function checkActivatedTab(){
+            var hash = window.location.hash,
+                $tabToShow = $('ul.pi-tabs-navigation a[href="' + hash + '"]');
+
+            if($el.length){
+                hash && $tabToShow.tab('show');
+            }
+        }
+
+
+
+
+scripts/pi.mobileMenu.js
+removed lines 24-31
+
+	//remove targetting from regular menu in tablet wide mode.
+	$('.' + settings.classMenuItemHasSubmenu).each(function(){
+		$(this).find(' > a').on('click', function(e){
+			if(window.piCurrentBound != 'lg'){
+				e.preventDefault();
+			}
+		});
+	});
+
+
+scripts/global.js
+removed lines 568-575
+
+	//remove targetting from regular menu in tablet wide mode.
+	$('.' + settings.classMenuItemHasSubmenu).each(function(){
+		$(this).find(' > a').on('click', function(e){
+			if(window.piCurrentBound != 'lg'){
+				e.preventDefault();
+			}
+		});
+	});

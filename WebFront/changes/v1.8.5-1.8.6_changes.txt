@@ -1,0 +1,60 @@
+
+To update google captcha you need:
+1) copy full folder handlers/recaptcha-php-1.11
+2) copy file handlers/formContact.php
+3) then update handlers/formContact.php with your API keys.
+4) copy file scripts/pi.global.js (if you have changed this file, you need to do that changes again)
+5) remove old google captcha code from form, and add new see docs-captcha.html
+
+Code that needs to be removed from form:
+<div  class="form-group pi-padding-bottom-10">
+	<script type="text/javascript">
+		var RecaptchaOptions = {
+			theme : 'clean'
+		};
+	</script>
+	<script type="text/javascript"
+			src="http://www.google.com/recaptcha/api/challenge?k=6LcQ-_USAAAAAC1auWYZck-TkqvxpqeptnCgasjQlJ">
+	</script>
+	<noscript>
+		<iframe src="http://www.google.com/recaptcha/api/noscript?k=6LcQ-_USAAAAAC1auWYZck-TkqvxpqeptnCgasjQlJ"
+				height="300" width="500" frameborder="0"></iframe><br>
+		<textarea name="recaptcha_challenge_field" rows="3" cols="40">
+		</textarea>
+		<input type="hidden" name="recaptcha_response_field"
+			   value="manual_challenge">
+	</noscript>
+</div>
+
+Code to be added instead:
+<div class="form-group">
+	<div class="g-recaptcha" data-sitekey="6LcQ-_USAAAAAC1auWYZck-TkqvxpqeptnCgasjQlJ"></div>
+	<script type="text/javascript"
+		src="https://www.google.com/recaptcha/api.js?hl=en">
+	</script>
+</div>
+
+
+
+To implement onepage menu items highlighting:
+1) copy full folder 3dParty/bootstrap/js/
+2) copy file from new build scripts/pi.init.scrollSpy.js
+3) connect that file in footer after bootstrap script connection
+4) add two classes to your header menu "nav navbar-nav"
+5) add id="pi-header-menu" to header menu wrapper
+6) remove class "active" from the first menu item
+
+Example:
+<div id="pi-header-menu" class="pi-row-block pi-pull-right">
+			<ul class="pi-simple-menu pi-has-hover-border pi-full-height pi-hidden-sm nav navbar-nav">
+
+//Isotope updated to version 2.1.0
+3dParty/isotope/isotope.js
+
+
+//Fixed small js issue:
+scripts/pi.init.tab.js
+
+//Line 48
+-           if($el.length){
++           if($tabToShow.length){
